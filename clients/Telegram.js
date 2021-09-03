@@ -57,7 +57,7 @@ module.exports = {
 
       chat.last = id;
 
-      if (chat.actual != id) return logger.warning("Hay nuevos mensajes de otro chat:", chalk.yellow.bold(betweenCor(message.from.id), chalk.magenta.bold(betweenCor(message.from.username))));
+      if (chat.actual != id) return logger.warn("Hay nuevos mensajes de otro chat:", chalk.yellow.bold(betweenCor(message.from.id), chalk.magenta.bold(betweenCor(message.from.username))));
 
       chat.message("receive", this.name, message.text, {
         author: {
