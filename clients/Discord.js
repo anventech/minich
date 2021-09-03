@@ -24,8 +24,6 @@ module.exports = {
     const manager = new Manager(terminal);
 
     this.bot.on("ready", () => {
-      this.ready = true;
-
       manager.connect(this.name);
     });
 
