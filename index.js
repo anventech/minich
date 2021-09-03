@@ -12,13 +12,6 @@ const Utils = require('./structures/Utils');
 const ArrayMap = require('./structures/ArrayMap');
 const packageJSON = require('./package.json');
 
-/**
- * ! Importante 01/09/2021
- * TODO: Terminar el comando switch.
- * TODO: Terminar el comando changeMode.
- * TODO: Hacer un logo.
- */
-
 const terminal = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -109,6 +102,8 @@ terminal.on("line", async (line) => {
   if (!chat.actual) return logger.error("Debes establecer un chat.");
 
   const client = clients.get(chat.app);
+
+  if (!client.idLength.includes(chat.actual.length)) return logger.error("La ID del chat actual probablemente es de otro cliente.");
 
   terminal.pause();
 
