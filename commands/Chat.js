@@ -1,6 +1,6 @@
 module.exports = {
   name: "chat",
-  description: "Cambia de chat.",
+  description: "Cambia entre chats.",
   usage: "{ID del chat/Nombre del contacto}",
   async execute(logger, chat, database, arguments, {}) {
     if (!arguments[0]) return logger.error("Debes insertar la ID de un chat.");
@@ -18,7 +18,7 @@ module.exports = {
   
       const app = chat.clients.get(chat.app);
   
-      if (!app.idLength.includes(arguments[0].length)) return logger.error("Esa ID probablemente es de otra app.");
+      if (!app.idLength.includes(arguments[0].length)) return logger.error("Esa ID probablemente es de otro cliente.");
   
       chat.actual = arguments[0];
     }
