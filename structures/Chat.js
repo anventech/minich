@@ -23,7 +23,7 @@ module.exports = class Chat extends Logger {
 
     if (data.guild) {
       if (data.guild.id) {
-        render.push(chalk.yellow.bold(betweenCor(data.guild.name)));
+        render.push(chalk.yellow.bold(betweenCor(data.guild.id)));
       } if (data.guild.name) {
         render.push(chalk.magenta.bold(betweenCor(data.guild.name)));
       }
