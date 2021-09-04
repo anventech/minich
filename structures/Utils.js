@@ -3,7 +3,7 @@ module.exports = {
     return `[${string}]`;
   },
   makeDocs: (page, id) => {
-    const docs = "https://anventech.github.io/minich-docs";
+    const docs = "https://minich.js.org/#";
 
     return `${docs}/${page}?id=${id}`;
   }

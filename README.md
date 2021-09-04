@@ -32,4 +32,4 @@ El tamaño mostrado en características es **solo** el tamaño del código, las 
 
 ## Documentación
 
-Puede leer la documentación de esta aplicación dando click en el siguiente link: [Documentación](https://anventech.github.io/minich-docs)
+Puede leer la documentación de esta aplicación dando click en el siguiente link: [Documentación](https://minich.js.org/#/)
