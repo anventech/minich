@@ -46,7 +46,7 @@ module.exports = {
       } if (this.mode == "channel") {
         if (message.channel.type != "text") return;
 
-        if (chat.actual != message.channel.id) return logger.warning("Hay nuevos mensajes de otro chat:", chalk.yellow.bold(betweenCor(message.channel.id), chalk.magenta.bold(betweenCor(`#${message.channel.name}`))));
+        if (chat.actual != message.channel.id) return logger.warn("Hay nuevos mensajes de otro chat:", chalk.yellow.bold(betweenCor(message.channel.id), chalk.magenta.bold(betweenCor(`#${message.channel.name}`))));
         
         chat.last = message.author.id;
 
